@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+/*
+em HTML é id = em CSS # (só um elemento)
+em HTML é class = em CSS é. (pode vários elementos)
+
+Em uma linha de codigo so posso ter um id se precisar colocar mais q um usamos a tag class
+Der nome nas class pelas suas funcionalidades e não pelo oq ela faz
+*/
+
+body {
+    background-color: #d6fde9;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    color: #1e402f;
+}
+
+#principal {
+    text-align: center;
+    background-color: #3c805e;
+    color: white;
+}
+
+h2 {
+    color: #3c805e;
+}
+
+.basico {
+    color: green;
+}
+
+.intermediario {
+    color: rgb(148, 148, 60);
+}
+
+.avancado {
+    color: rgb(119, 44, 44);
+}
+
+.destaque{
+    background-color: #c5c56070;
+}

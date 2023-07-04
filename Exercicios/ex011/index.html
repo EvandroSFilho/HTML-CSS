@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir essas site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamaho do seu navegador</p>
+    
+    <!--A teg (picture) significa que vai aparecer uma imagem nela-->
+    <picture>
+        <!--A ordem de como colocamos os source das imagens altera a execução do programa-->
+
+        <!--com essa ta se você diminuir de mais a tela essa imagem sera carregada-->
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+
+        <!--com essa ta se você diminuir a tela em tamanho medio essa imagem sera carregada-->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+
+        <!--caso ao contrario essa imagem sera carregada-->
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+    </picture>
+    
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5</p>
+
+    <!--PRELOAD TEM 3 TIPOS O MAIS RECOMENDADO É O "METADATA"-->
+    <!--AUTOPLAY - FAZ O SOM TOCAR-->
+    <!--CONTROLS - FAZ APARECER OS CONTROLES-->
+    <!--LOOP - FAZ A MUSICA RECOMECAR ASSIM QUE ACABA-->
+    <audio preload="metadata" autoplay controls>
+        <!--COLOCAMOS OS 3 FORMATOS MP3, OGG E WAV, SE OS EU NAVEGADOR NAO FOR COMPATIVEL COM NENHUM DESSES FORMATOS AO IRA APARECER A MENSAGEM COM A OPÃO DE BAIXAR O ARQUIVO-->
+        <source src="midia/soulicious.mp3" type="audio/mpeg">
+        <source src="midia/soulicious.mp3" type="audio/OGG">
+        <source src="midia/soulicious.mp3" type="audio/WAV">
+        <!--EVITAR USAR OS ARQUIVOS WAV, POS ELES SAO MUITO PESADOS-->
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/soulicious.mp3">Clique aqui oara baixar o arquivo MP3</a></p>
+    </audio>
+
+    <!-- Esse é uma das tags que conseguimos usar para colocar áudio, normalmente ele so aceita os formatos MP3, WAV, OGG
+    (( <audio src="midia/a_flute.mp3" controls autoplay></audio> ))-->
+</body>
+</html>

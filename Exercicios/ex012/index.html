@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/logo2.png" type="image/x-icon">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+
+    <!--TEG CONTROLS - ira aparecer os controles
+        TEG WIDTH - você pode colocar o tamanho
+        TEG POSTER - você pode colocar uma capa para o seu vídeo
+        TEG AUTOPLAY - ele vai iniciar sozinho
+        TEG LOOP - ele vai reproduzir assim que acabar-->
+
+   <video width="560" poster="imagens/capa.png" controls autoplay loop>
+    <!--Aqui definimos uma teg VIDEO para pode colocar todos os formatos, tentando abrangir todo topo de navegador, caso ao contrario ira cair na mensagem-->
+    <source src="midia/meu_video_MP4.mp4" type="video/mp4">
+    <source src="midia/Meu Video_MKV.mkv" type="video/mkv">
+    <source src="midia/Meu Video_WEBM.webm" type="video/webm">
+    <source src="midia/meu_video_OGV.ogv" type="video/ogv">
+    <p>Seu navegador não tem compatibilidade com reprodução de vídeos</p>
+   </video>
+   <!--Vídeos ospedados em site fazem o consumo exessivo de internet-->
+
+   <h1>Inserindo vídeos do YouTube</h1>
+   <iframe width="560" height="315" src="https://www.youtube.com/embed/FdE5G95B7Mg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!--Dessa forma usamos o youtube para reproduzir os video, com isso não consumimos nossos dados e sim os do youtube-->
+     <!-- #### Dica ####
+        criar uma conta no youtube para subir os vídeos, tomando sempre cuidado com direitos autorais, lembrando que tem como deixar os vídeos publicos ou privados-->
+</body>
+</html>

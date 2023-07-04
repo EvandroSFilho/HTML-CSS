@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com links</title>
+</head>
+<body>
+    <h1>Usando links externos</h1>
+    <p>Você pode acessar o meu <a href="https://github.com/EvandroSFilho?tab=repositories" target="_blank" rel="external">repositório público no GitHub</a></p>
+    <!--É recomendado usar (target="_blank" rel="external") para abrir a pagina em uma segunda aba e manter o vosso site aberto-->
+    <p>Você também pode acessar o meu <a href="https://www.linkedin.com/in/evandro-santana-filho/" target="_blank" rel="external">linekdin</a></p>
+
+    <h1>Usando links internos</h1>
+    <p>Está é a primeira página do site. Se você quiser, pode acessar também a minha <a href="pag002.html" rel="next" target="_self">Segunda página</a></p>
+
+    <p>Você também pode acessar a nossa <a href="noticias/pag003.html" rel="next" target="_self">página de notícias</a></p>
+
+    <h1>Links para download</h1>
+    <ul>
+        <!--usar a ( # ) por enquanto q não tem link significa que é um link vazio-->
+        <li><a href="livro/H_Internet.pdf" download="H_Internet" type="application/pdf">Baixar o livro em PDF</a></li>
+        <!--usamos ( download="H_Internet" ) para indormar oque queremos baixar e usamos o (type="application/pdf") para informar o formato que queremos baixar-->
+        <li><a href="livro/H_D_Internet.zip" download="H_D_Internet" type="application/zip">Livro compactado em ZIP</a></li>
+    </ul>
+    
+</body>
+</html>
