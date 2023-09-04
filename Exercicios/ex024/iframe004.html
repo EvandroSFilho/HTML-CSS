@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iframes</title>
+</head>
+<body>
+    <h1>Meu site principal</h1>
+    <p>Abaixo temos algumas ticas de segurançao para deixar o site mais seguro contra ataques<br>
+    <li>Usamos o <mark>sandbox="sandbox"</mark> para nao fazer pesquisas no site.
+    <li>Usamos o <mark>sandbox="allow-same-origin"</mark> para liberar acesso apenas para sites com arquivos do mesmo arquivo. 
+    <li>Podemos usar tambem duas funcões no sandbox
+    <li>Usamos o <mark>referrerpolicy="no-referrer"</mark> para nao deixar nenhum outro site pegar os dados para ser usado em outros fins.
+</p>
+    <iframe src="paginas-extras/pag004.html" sandbox="allow-same-origin allow-scripts" referrerpolicy="no-referrer">
+        Seu navegador não é compativel com isso...
+    </iframe>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut doloribus facilis corporis voluptas. Fugiat, nisi consequuntur nulla soluta illo eaque mollitia? A sint, assumenda at dicta aspernatur minima praesentium explicabo?</p>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de iframes</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        iframe#tela {
+            width: 95vh;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Faça uma escolha</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At, illum voluptatum! Itaque repudiandae architecto,
+        vero veritatis deleniti quibusdam eveniet accusamus nobis doloremque tempora labore magni. Fugiat quaerat
+        temporibus sint dolorem.</p>
+
+    <ul>
+        <li><a href="paginas-extras/pag001.html" target="frame">Primeira página</a></li>
+        <li><a href="paginas-extras/pag002.html" 
+        target="frame">Segunda página</a></li>
+        <li><a href="paginas-extras/pag003.html" target="frame">Terceira página</a></li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores laboriosam magnam modi, vel consectetur esse,
+        amet enim quo provident, quod nesciunt ratione ab optio alias. Iste, et fugit? Fugiat, voluptates. Lorem ipsum
+        dolor sit amet consectetur adipisicing elit. Veritatis adipisci, laudantium ipsa perspiciatis reiciendis
+        temporibus nam expedita maiores, facilis sit cum, quidem inventore autem? Illum natus quibusdam modi tempora
+        libero!</p>
+
+    <iframe id="tela" name="frame" srcdoc="<h1>Escolha uma das opções acima</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et molestias obcaecati nulla dolore corporis, possimus alias nihil animi fugiat ea omnis, odio illo debitis officiis vel laboriosam eum, voluptatibus reiciendis?</p> 
+        <img src='imagens/pexels-singkham-1166473.jpg'>">
+        <p>Infelizmente seu navegador não é compativel com isso.
+        </p>
+    </iframe>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum est ipsam veniam repudiandae ex, atque
+        consequuntur minima. Cupiditate ab repudiandae odit velit eius neque quia quae iusto dolorem. Veritatis, nemo.
+    </p>
+</body>
+
+</html>
